@@ -59,8 +59,8 @@
                           </Group>
                           <EmptySpace min="-2" pref="91" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="txtGPU" min="-2" pref="189" max="-2" attributes="0"/>
-                              <Component id="txtROM" min="-2" pref="189" max="-2" attributes="0"/>
+                              <Component id="txtdoCaoYen" min="-2" pref="189" max="-2" attributes="0"/>
+                              <Component id="txttieuThuNL" min="-2" pref="189" max="-2" attributes="0"/>
                               <Component id="jLabel9" alignment="0" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
@@ -71,16 +71,16 @@
                           </Group>
                           <EmptySpace min="-2" pref="91" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="jLabel7" min="-2" pref="37" max="-2" attributes="0"/>
-                              <Component id="txtRAM" min="-2" pref="189" max="-2" attributes="0"/>
+                              <Component id="txtphanKhoi" min="-2" pref="189" max="-2" attributes="0"/>
+                              <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <Component id="txtMaSanPham" min="-2" pref="189" max="-2" attributes="0"/>
                           <EmptySpace min="91" pref="91" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="jLabel6" min="-2" pref="37" max="-2" attributes="0"/>
-                              <Component id="txtCPU" min="-2" pref="189" max="-2" attributes="0"/>
+                              <Component id="txttenDongCo" min="-2" pref="189" max="-2" attributes="0"/>
+                              <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <Component id="jLabel2" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -88,7 +88,7 @@
                   <EmptySpace min="-2" pref="124" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Component id="jPanel3" alignment="0" max="32767" attributes="0"/>
-                      <Component id="cbxloaisp" alignment="0" pref="186" max="32767" attributes="0"/>
+                      <Component id="cbxloaisp" alignment="0" max="32767" attributes="0"/>
                       <Component id="txtXuatXu" alignment="0" max="32767" attributes="0"/>
                       <Group type="102" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
@@ -121,7 +121,7 @@
                   <EmptySpace min="5" pref="5" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Component id="txtMaSanPham" alignment="0" min="-2" pref="32" max="-2" attributes="0"/>
-                      <Component id="txtCPU" alignment="0" min="-2" pref="32" max="-2" attributes="0"/>
+                      <Component id="txttenDongCo" alignment="0" min="-2" pref="32" max="-2" attributes="0"/>
                       <Component id="cbxloaisp" alignment="0" min="-2" pref="32" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
@@ -141,7 +141,7 @@
                           <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Component id="txtTenSanPham" alignment="0" min="-2" pref="32" max="-2" attributes="0"/>
-                              <Component id="txtRAM" alignment="0" min="-2" pref="32" max="-2" attributes="0"/>
+                              <Component id="txtphanKhoi" alignment="0" min="-2" pref="32" max="-2" attributes="0"/>
                           </Group>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" attributes="0">
@@ -155,7 +155,7 @@
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="txtROM" min="-2" pref="32" max="-2" attributes="0"/>
+                              <Component id="txttieuThuNL" min="-2" pref="32" max="-2" attributes="0"/>
                               <Component id="txtSoLuong" min="-2" pref="35" max="-2" attributes="0"/>
                           </Group>
                           <Group type="103" groupAlignment="0" attributes="0">
@@ -169,10 +169,10 @@
                                   <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
                                   <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="txtGPU" min="-2" pref="33" max="-2" attributes="0"/>
+                                  <Component id="txtdoCaoYen" min="-2" pref="33" max="-2" attributes="0"/>
                               </Group>
                           </Group>
-                          <EmptySpace pref="35" max="32767" attributes="0"/>
+                          <EmptySpace pref="31" max="32767" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="btnAddProduct" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
                               <Component id="btnCancel" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
@@ -237,25 +237,28 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="SF Pro Display" size="16" style="0"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="CPU"/>
+            <Property name="text" type="java.lang.String" value="T&#xea;n &#x111;&#x1ed9;ng c&#x1a1;"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="txtCPU">
+        <Component class="javax.swing.JTextField" name="txttenDongCo">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="SF Pro Display" size="16" style="0"/>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_SerializeTo" type="java.lang.String" value="tenDongco"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel7">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="SF Pro Display" size="16" style="0"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="RAM"/>
+            <Property name="text" type="java.lang.String" value="Ph&#xe2;n kh&#x1ed1;i"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="txtRAM">
+        <Component class="javax.swing.JTextField" name="txtphanKhoi">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="SF Pro Display" size="16" style="0"/>
@@ -267,17 +270,17 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="SF Pro Display" size="16" style="0"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Dung l&#x1b0;&#x1ee3;ng l&#x1b0;u tr&#x1eef;"/>
+            <Property name="text" type="java.lang.String" value="Ti&#xea;u th&#x1ee5; nhi&#xea;n li&#x1ec7;u"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="txtROM">
+        <Component class="javax.swing.JTextField" name="txttieuThuNL">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="SF Pro Display" size="16" style="0"/>
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtROMActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txttieuThuNLActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel9">
@@ -285,10 +288,10 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="SF Pro Display" size="16" style="0"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Card &#x111;&#x1ed3; ho&#x1ea1;"/>
+            <Property name="text" type="java.lang.String" value="&#x110;&#x1ed9; cao y&#xea;n"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="txtGPU">
+        <Component class="javax.swing.JTextField" name="txtdoCaoYen">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="SF Pro Display" size="16" style="0"/>
@@ -310,8 +313,8 @@
             </Property>
             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
               <StringArray count="2">
-                <StringItem index="0" value="Laptop"/>
-                <StringItem index="1" value="PC - L&#x1eaf;p r&#xe1;p"/>
+                <StringItem index="0" value="Xe s&#x1ed1;"/>
+                <StringItem index="1" value="Tay ga"/>
               </StringArray>
             </Property>
             <Property name="enabled" type="boolean" value="false"/>
@@ -389,15 +392,15 @@
               <Layout>
                 <DimensionLayout dim="0">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="txtKichThuocMan" alignment="0" max="32767" attributes="0"/>
+                      <Component id="txtdungTichbinhXang" alignment="0" max="32767" attributes="0"/>
                       <Group type="102" alignment="0" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Component id="jLabel11" alignment="0" min="-2" max="-2" attributes="0"/>
                               <Component id="jLabel12" alignment="0" min="-2" pref="111" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace min="0" pref="92" max="32767" attributes="0"/>
+                          <EmptySpace min="0" pref="48" max="32767" attributes="0"/>
                       </Group>
-                      <Component id="txtDungLuongPin" alignment="0" max="32767" attributes="0"/>
+                      <Component id="txtphienBan" alignment="0" max="32767" attributes="0"/>
                   </Group>
                 </DimensionLayout>
                 <DimensionLayout dim="1">
@@ -405,11 +408,11 @@
                       <Group type="102" alignment="0" attributes="0">
                           <Component id="jLabel11" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="txtKichThuocMan" min="-2" pref="32" max="-2" attributes="0"/>
+                          <Component id="txtdungTichbinhXang" min="-2" pref="32" max="-2" attributes="0"/>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                           <Component id="jLabel12" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Component id="txtDungLuongPin" min="-2" pref="32" max="-2" attributes="0"/>
+                          <Component id="txtphienBan" min="-2" pref="32" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -420,10 +423,10 @@
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="SF Pro Display" size="16" style="0"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="K&#xed;ch th&#x1b0;&#x1edb;c m&#xe0;n"/>
+                    <Property name="text" type="java.lang.String" value="Dung t&#xed;ch b&#xec;nh x&#x103;ng"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JTextField" name="txtKichThuocMan">
+                <Component class="javax.swing.JTextField" name="txtdungTichbinhXang">
                   <Properties>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="SF Pro Display" size="16" style="0"/>
@@ -435,10 +438,10 @@
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="SF Pro Display" size="16" style="0"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="Dung l&#x1b0;&#x1ee3;ng PIN"/>
+                    <Property name="text" type="java.lang.String" value="Phi&#xea;n b&#x1ea3;n"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JTextField" name="txtDungLuongPin">
+                <Component class="javax.swing.JTextField" name="txtphienBan">
                   <Properties>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="SF Pro Display" size="16" style="0"/>

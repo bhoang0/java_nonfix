@@ -15,7 +15,7 @@ import model.TayGa;
 
 /**
  *
- * @author Tran Nhat Sinh
+ * @author 
  */
 public class UpdateProduct extends javax.swing.JDialog {
 
@@ -94,16 +94,16 @@ public class UpdateProduct extends javax.swing.JDialog {
         btnAddProduct = new javax.swing.JButton();
         btnCancel = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
-        xeso = new javax.swing.JPanel();
+        laptop = new javax.swing.JPanel();
         jLabel11 = new javax.swing.JLabel();
         txtdungTichbinhXang = new javax.swing.JTextField();
         jLabel12 = new javax.swing.JLabel();
         txtphienBan = new javax.swing.JTextField();
-        tg = new javax.swing.JPanel();
+        pc = new javax.swing.JPanel();
         jLabel13 = new javax.swing.JLabel();
-        txtcongSuat = new javax.swing.JTextField();
+        txtMainBoard = new javax.swing.JTextField();
         jLabel14 = new javax.swing.JLabel();
-        txtkhoiLuong = new javax.swing.JTextField();
+        txtCongsuatNguon = new javax.swing.JTextField();
         jLabel15 = new javax.swing.JLabel();
         txtXuatXu = new javax.swing.JTextField();
         txtSoLuong = new javax.swing.JTextField();
@@ -202,7 +202,7 @@ public class UpdateProduct extends javax.swing.JDialog {
 
         jPanel3.setLayout(new java.awt.CardLayout());
 
-        xeso.setBackground(new java.awt.Color(255, 255, 255));
+        laptop.setBackground(new java.awt.Color(255, 255, 255));
 
         jLabel11.setFont(new java.awt.Font("SF Pro Display", 0, 16)); // NOI18N
         jLabel11.setText("Dung tích bình xăng");
@@ -214,21 +214,21 @@ public class UpdateProduct extends javax.swing.JDialog {
 
         txtphienBan.setFont(new java.awt.Font("SF Pro Display", 0, 16)); // NOI18N
 
-        javax.swing.GroupLayout xesoLayout = new javax.swing.GroupLayout(xeso);
-        xeso.setLayout(xesoLayout);
-        xesoLayout.setHorizontalGroup(
-            xesoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout laptopLayout = new javax.swing.GroupLayout(laptop);
+        laptop.setLayout(laptopLayout);
+        laptopLayout.setHorizontalGroup(
+            laptopLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(txtdungTichbinhXang)
-            .addGroup(xesoLayout.createSequentialGroup()
-                .addGroup(xesoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(laptopLayout.createSequentialGroup()
+                .addGroup(laptopLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel11)
                     .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(0, 92, Short.MAX_VALUE))
+                .addGap(0, 48, Short.MAX_VALUE))
             .addComponent(txtphienBan)
         );
-        xesoLayout.setVerticalGroup(
-            xesoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(xesoLayout.createSequentialGroup()
+        laptopLayout.setVerticalGroup(
+            laptopLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(laptopLayout.createSequentialGroup()
                 .addComponent(jLabel11)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(txtdungTichbinhXang, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -238,41 +238,41 @@ public class UpdateProduct extends javax.swing.JDialog {
                 .addComponent(txtphienBan, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        jPanel3.add(xeso, "card2");
+        jPanel3.add(laptop, "card2");
 
-        tg.setBackground(new java.awt.Color(255, 255, 255));
+        pc.setBackground(new java.awt.Color(255, 255, 255));
 
         jLabel13.setFont(new java.awt.Font("SF Pro Display", 0, 16)); // NOI18N
-        jLabel13.setText("Công suất");
+        jLabel13.setText("MainBoard");
 
         jLabel14.setFont(new java.awt.Font("SF Pro Display", 0, 16)); // NOI18N
-        jLabel14.setText("Khối lượng");
+        jLabel14.setText("Công suất nguồn");
 
-        javax.swing.GroupLayout tgLayout = new javax.swing.GroupLayout(tg);
-        tg.setLayout(tgLayout);
-        tgLayout.setHorizontalGroup(
-            tgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(txtcongSuat)
-            .addComponent(txtkhoiLuong)
-            .addGroup(tgLayout.createSequentialGroup()
-                .addGroup(tgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout pcLayout = new javax.swing.GroupLayout(pc);
+        pc.setLayout(pcLayout);
+        pcLayout.setHorizontalGroup(
+            pcLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(txtMainBoard)
+            .addComponent(txtCongsuatNguon)
+            .addGroup(pcLayout.createSequentialGroup()
+                .addGroup(pcLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel13)
                     .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(0, 45, Short.MAX_VALUE))
         );
-        tgLayout.setVerticalGroup(
-            tgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(tgLayout.createSequentialGroup()
+        pcLayout.setVerticalGroup(
+            pcLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pcLayout.createSequentialGroup()
                 .addComponent(jLabel13)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(txtcongSuat, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(txtMainBoard, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel14)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(txtkhoiLuong, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(txtCongsuatNguon, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        jPanel3.add(tg, "card2");
+        jPanel3.add(pc, "card2");
 
         jLabel15.setFont(new java.awt.Font("SF Pro Display", 0, 16)); // NOI18N
         jLabel15.setText("Xuất xứ");
@@ -312,19 +312,19 @@ public class UpdateProduct extends javax.swing.JDialog {
                             .addComponent(jLabel3))
                         .addGap(91, 91, 91)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtphanKhoi, javax.swing.GroupLayout.PREFERRED_SIZE, 189, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(txtphanKhoi, javax.swing.GroupLayout.PREFERRED_SIZE, 189, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel7)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(txtMaSanPham, javax.swing.GroupLayout.PREFERRED_SIZE, 189, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(91, 91, 91)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txttenDongCo, javax.swing.GroupLayout.PREFERRED_SIZE, 189, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(txttenDongCo, javax.swing.GroupLayout.PREFERRED_SIZE, 189, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel6)))
                     .addComponent(jLabel2))
                 .addGap(124, 124, 124)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(cbxloaisp, 0, 186, Short.MAX_VALUE)
+                    .addComponent(cbxloaisp, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(txtXuatXu)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -390,7 +390,7 @@ public class UpdateProduct extends javax.swing.JDialog {
                                 .addComponent(jLabel9)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(txtdoCaoYen, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 35, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 31, Short.MAX_VALUE)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(btnAddProduct, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btnCancel, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -584,20 +584,20 @@ public class UpdateProduct extends javax.swing.JDialog {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel xeso;
-    private javax.swing.JPanel tg;
-    private javax.swing.JTextField txttenDongCo;
+    private javax.swing.JPanel laptop;
+    private javax.swing.JPanel pc;
     private javax.swing.JTextField txtkhoiLuong;
     private javax.swing.JTextField txtDonGia;
-    private javax.swing.JTextField txtphienBan;
-    private javax.swing.JTextField txtdoCaoYen;
-    private javax.swing.JTextField txtdungTichbinhXang;
     private javax.swing.JTextField txtMaSanPham;
     private javax.swing.JTextField txtcongSuat;
-    private javax.swing.JTextField txtphanKhoi;
-    private javax.swing.JTextField txttieuThuNL;
     private javax.swing.JTextField txtSoLuong;
     private javax.swing.JTextField txtTenSanPham;
     private javax.swing.JTextField txtXuatXu;
+    private javax.swing.JTextField txtdoCaoYen;
+    private javax.swing.JTextField txtdungTichbinhXang;
+    private javax.swing.JTextField txtphanKhoi;
+    private javax.swing.JTextField txtphienBan;
+    private javax.swing.JTextField txttenDongCo;
+    private javax.swing.JTextField txttieuThuNL;
     // End of variables declaration//GEN-END:variables
 }
