@@ -64,7 +64,7 @@ CREATE TABLE  XeMay  (
    congSuat varchar(50) DEFAULT NULL,
    khoiLuong int(11) DEFAULT NULL,
    loaiXe  varchar(50) DEFAULT NULL,
-   tieuthuNhienLieu varchar(50) DEFAULT NULL,
+   tieuthuNL varchar(50) DEFAULT NULL,
    dungTichbinhXang double DEFAULT NULL,
    phienBan  varchar(50) DEFAULT NULL,
    xuatXu  varchar(50) DEFAULT NULL,
@@ -75,7 +75,7 @@ CREATE TABLE  XeMay  (
 -- Dumping data for table  XeMay 
 --
 
-INSERT INTO  XeMay  ( maXe ,  tenXe ,  soLuong ,  tenDongCo ,  phanKhoi ,  doCaoYen ,  gia ,  congSuat ,  khoiLuong ,  loaiXe ,  tieuthuNhienLieu ,  dungTichbinhXang ,  phienBan ,  xuatXu ,  trangThai ) VALUES
+INSERT INTO  XeMay  ( maXe ,  tenXe ,  soLuong ,  tenDongCo ,  phanKhoi ,  doCaoYen ,  gia ,  congSuat ,  khoiLuong ,  loaiXe ,  tieuthuNL,  dungTichbinhXang ,  phienBan ,  xuatXu ,  trangThai ) VALUES
 ('HD1', 'Honda SH350i', 36, 'SOHC, 4 kỳ, xy-lanh đơn 4 van, làm mát bằng chất lỏng, đáp ứng Euro 3', '329,6 cm3', '805 mm', 150000000, NULL, NULL, 'Tay ga', '3.63 lít/100km', 9.3, 'Cao cấp', 'Nhật Bản', 0),
 ('HD2', 'Honda Wave Alpha 110', 23, '4 kỳ, 1 xilanh, làm mát bằng không khí', '109,2 cm3', '770 mm', 17500000, NULL, NULL, 'Xe số', '1.72 lít/100km', 3.7, 'Tiêu chuẩn', 'Nhật Bản', 0),
 ('HD3', 'Honda Winner X 2024', 19, 'PGM-FI, DOHC, 4 kỳ xi-lanh đơn, côn tay 6 cấp số, làm mát bằng chất lỏng', '149,2 cm3', '795 mm', 46500000, NULL, NULL, 'Xe số', '1.98 lít/100km', 5.5, 'Tiêu chuẩn', 'Nhật Bản', 1),

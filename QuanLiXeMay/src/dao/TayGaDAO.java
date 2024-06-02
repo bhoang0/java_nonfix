@@ -27,7 +27,7 @@ public class TayGaDAO implements DAOInterface<TayGa> {
         int ketQua = 0;
         try {
             Connection con = JDBCUtil.getConnection();
-            String sql = "INSERT INTO XeMay (MaXe, TenXe, soLuong, tentenDongCo, phanKhoi, doCaoYen, gia, congSuat, khoiLuong, xuatXu, loaixe, tieuThuNL, trangThai) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)";
+            String sql = "INSERT INTO XeMay (MaXe, TenXe, soLuong, tenDongCo, phanKhoi, doCaoYen, gia, congSuat, khoiLuong, xuatXu, loaixe, tieuThuNL, trangThai) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)";
             PreparedStatement pst = con.prepareStatement(sql);
             pst.setString(1, t.getMaXe());
             pst.setString(2, t.getTenXe());
@@ -55,7 +55,7 @@ public class TayGaDAO implements DAOInterface<TayGa> {
         int ketQua = 0;
         try {
             Connection con = JDBCUtil.getConnection();
-            String sql = "UPDATE XeMay SET MaXe=?, TenXe=?, soLuong=?, tentenDongCo=?, phanKhoi=?, doCaoYen=?, gia=?, congSuat=?, khoiLuong=?, xuatXu=?, loaixe = ?, tieuThuNL = ?, trangThai = ? WHERE MaXe= ? ";
+            String sql = "UPDATE XeMay SET MaXe=?, TenXe=?, soLuong=?, tenDongCo=?, phanKhoi=?, doCaoYen=?, gia=?, congSuat=?, khoiLuong=?, xuatXu=?, loaixe = ?, tieuThuNL = ?, trangThai = ? WHERE MaXe= ? ";
             PreparedStatement pst = con.prepareStatement(sql);
             pst.setString(1, t.getMaXe()); 
             pst.setString(2, t.getTenXe());
@@ -108,7 +108,7 @@ public class TayGaDAO implements DAOInterface<TayGa> {
                 String MaXe = rs.getString("MaXe");
                 String TenXe = rs.getString("TenXe");
                 int soLuong = rs.getInt("soLuong");
-                String tentenDongCo = rs.getString("tentenDongCo");
+                String tenDongCo = rs.getString("tenDongCo");
                 String phanKhoi = rs.getString("phanKhoi");
                 String doCaoYen = rs.getString("doCaoYen");
                 double gia = rs.getDouble("gia");
@@ -117,7 +117,7 @@ public class TayGaDAO implements DAOInterface<TayGa> {
                 String tieuThuNL = rs.getString("tieuThuNL");
                 String xuatXu = rs.getString("xuatXu");
                 int trangThai = rs.getInt("trangThai");
-                TayGa tg = new TayGa(congSuat, khoiLuong, MaXe, TenXe, soLuong, gia, tentenDongCo, phanKhoi, xuatXu, doCaoYen, tieuThuNL,trangThai);
+                TayGa tg = new TayGa(congSuat, khoiLuong, MaXe, TenXe, soLuong, gia, tenDongCo, phanKhoi, xuatXu, doCaoYen, tieuThuNL,trangThai);
                 ketQua.add(tg);
             }
         } catch (Exception e) {
@@ -140,7 +140,7 @@ public class TayGaDAO implements DAOInterface<TayGa> {
                 String maXe = rs.getString("maXe");
                 String TenXe = rs.getString("TenXe");
                 int soLuong = rs.getInt("soLuong");
-                String tentenDongCo = rs.getString("tentenDongCo");
+                String tenDongCo = rs.getString("tenDongCo");
                 String phanKhoi = rs.getString("phanKhoi");
                 String doCaoYen = rs.getString("doCaoYen");
                 double gia = rs.getDouble("gia");
@@ -149,7 +149,7 @@ public class TayGaDAO implements DAOInterface<TayGa> {
                 String tieuThuNL = rs.getString("tieuThuNL");
                 String xuatXu = rs.getString("xuatXu");
                 int trangThai = rs.getInt("trangThai");
-                ketQua = new TayGa(congSuat, khoiLuong, maXe, TenXe, soLuong, gia, tentenDongCo, phanKhoi, xuatXu, doCaoYen, tieuThuNL,trangThai);
+                ketQua = new TayGa(congSuat, khoiLuong, maXe, TenXe, soLuong, gia, tenDongCo, phanKhoi, xuatXu, doCaoYen, tieuThuNL,trangThai);
             }
         } catch (Exception e) {
             // TODO: handle exception
