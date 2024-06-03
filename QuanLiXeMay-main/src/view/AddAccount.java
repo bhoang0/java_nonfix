@@ -190,7 +190,7 @@ public class AddAccount extends javax.swing.JDialog {
         if (fullName.equals("") || user.equals("") || password.equals("") || role.equals("") || email.equals("")) {
             JOptionPane.showMessageDialog(this, "Vui lòng nhập đầy đủ thông tin !", "Cảnh báo ", JOptionPane.WARNING_MESSAGE);
         } else {
-            if (AccountDAO.getInstance().selectById(user) != null) {
+            if (AccountDAO.getInstance().selectById(user) == null) {
                 if (isValid(email)) {
                     Account acc = new Account(fullName, user, password, role, 1, email);
                     AccountDAO.getInstance().insert(acc);

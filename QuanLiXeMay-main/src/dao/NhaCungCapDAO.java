@@ -16,7 +16,7 @@ import model.Phieu;
 
 /**
  *
- * @author kali
+ * @author
  */
 public class NhaCungCapDAO implements DAOInterface<NhaCungCap> {
 

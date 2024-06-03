@@ -99,7 +99,7 @@ public class UpdateProduct extends javax.swing.JDialog {
         txtdungTichbinhXang = new javax.swing.JTextField();
         jLabel12 = new javax.swing.JLabel();
         txtphienBan = new javax.swing.JTextField();
-        tg = new javax.swing.JPanel();
+        tayga = new javax.swing.JPanel();
         jLabel13 = new javax.swing.JLabel();
         txtcongSuat = new javax.swing.JTextField();
         jLabel14 = new javax.swing.JLabel();
@@ -240,7 +240,7 @@ public class UpdateProduct extends javax.swing.JDialog {
 
         jPanel3.add(xeso, "card2");
 
-        tg.setBackground(new java.awt.Color(255, 255, 255));
+        tayga.setBackground(new java.awt.Color(255, 255, 255));
 
         jLabel13.setFont(new java.awt.Font("SF Pro Display", 0, 16)); // NOI18N
         jLabel13.setText("Công suất");
@@ -248,21 +248,21 @@ public class UpdateProduct extends javax.swing.JDialog {
         jLabel14.setFont(new java.awt.Font("SF Pro Display", 0, 16)); // NOI18N
         jLabel14.setText("Khối lượng");
 
-        javax.swing.GroupLayout tgLayout = new javax.swing.GroupLayout(tg);
-        tg.setLayout(tgLayout);
-        tgLayout.setHorizontalGroup(
-            tgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout taygaLayout = new javax.swing.GroupLayout(tayga);
+        tayga.setLayout(taygaLayout);
+        taygaLayout.setHorizontalGroup(
+            taygaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(txtcongSuat)
             .addComponent(txtkhoiLuong)
-            .addGroup(tgLayout.createSequentialGroup()
-                .addGroup(tgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(taygaLayout.createSequentialGroup()
+                .addGroup(taygaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel13)
                     .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(0, 45, Short.MAX_VALUE))
         );
-        tgLayout.setVerticalGroup(
-            tgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(tgLayout.createSequentialGroup()
+        taygaLayout.setVerticalGroup(
+            taygaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(taygaLayout.createSequentialGroup()
                 .addComponent(jLabel13)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(txtcongSuat, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -272,13 +272,14 @@ public class UpdateProduct extends javax.swing.JDialog {
                 .addComponent(txtkhoiLuong, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        jPanel3.add(tg, "card2");
+        jPanel3.add(tayga, "card2");
 
         jLabel15.setFont(new java.awt.Font("SF Pro Display", 0, 16)); // NOI18N
         jLabel15.setText("Xuất xứ");
 
         txtXuatXu.setFont(new java.awt.Font("SF Pro Display", 0, 16)); // NOI18N
 
+        txtSoLuong.setEditable(false);
         txtSoLuong.setFont(new java.awt.Font("SF Pro Display", 0, 16)); // NOI18N
 
         jLabel16.setFont(new java.awt.Font("SF Pro Display", 0, 16)); // NOI18N
@@ -585,7 +586,7 @@ public class UpdateProduct extends javax.swing.JDialog {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel xeso;
-    private javax.swing.JPanel tg;
+    private javax.swing.JPanel tayga;
     private javax.swing.JTextField txttenDongCo;
     private javax.swing.JTextField txtkhoiLuong;
     private javax.swing.JTextField txtDonGia;

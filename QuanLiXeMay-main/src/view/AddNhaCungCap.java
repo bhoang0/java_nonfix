@@ -107,7 +107,7 @@ public class AddNhaCungCap extends javax.swing.JDialog {
 
         jButton2.setFont(new java.awt.Font("iCiel Gotham Medium", 1, 16)); // NOI18N
         jButton2.setText("Huỷ");
-        jButton2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 0, 0), null));
+        jButton2.setBorder(null);
         jButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -169,7 +169,7 @@ public class AddNhaCungCap extends javax.swing.JDialog {
             if (maNcc.equals("") || tenNcc.equals("") || sdtNcc.equals("") || diachiNcc.equals("")) {
                 JOptionPane.showMessageDialog(this, "Vui lòng nhập đầy đủ thông tin !", "Cảnh báo", JOptionPane.WARNING_MESSAGE);
             } else {
-                if (NhaCungCapDAO.getInstance().selectById(maNcc) != null) {
+                if (NhaCungCapDAO.getInstance().selectById(maNcc) == null) {
                     NhaCungCap ncc = new NhaCungCap();
                     ncc.setMaNhaCungCap(maNcc);
                     ncc.setTenNhaCungCap(tenNcc);

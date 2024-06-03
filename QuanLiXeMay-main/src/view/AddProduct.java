@@ -67,16 +67,6 @@ public class AddProduct extends javax.swing.JDialog {
         btnAddProduct = new javax.swing.JButton();
         btnCancel = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
-        xeso = new javax.swing.JPanel();
-        jLabel11 = new javax.swing.JPanel();
-        txtdungTichbinhXang = new javax.swing.JTextField();
-        jLabel12 = new javax.swing.JPanel();
-        txtphienBan = new javax.swing.JTextField();
-        pc = new javax.swing.JPanel();
-        jLabel13 = new javax.swing.JPanel();
-        txtcongSuat = new javax.swing.JTextField();
-        jLabel14 = new javax.swing.JPanel();
-        txtkhoiLuong = new javax.swing.JTextField();
         jLabel15 = new javax.swing.JLabel();
         txtXuatXu = new javax.swing.JTextField();
         jPanel2 = new javax.swing.JPanel();
@@ -93,6 +83,11 @@ public class AddProduct extends javax.swing.JDialog {
 
         txtMaSanPham.setEditable(false);
         txtMaSanPham.setFont(new java.awt.Font("iCiel Gotham Medium", 0, 12)); // NOI18N
+        txtMaSanPham.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtMaSanPhamActionPerformed(evt);
+            }
+        });
 
         jLabel3.setFont(new java.awt.Font("iCiel Gotham Medium", 0, 12)); // NOI18N
         jLabel3.setText("Tên sản phẩm");
@@ -339,10 +334,12 @@ public class AddProduct extends javax.swing.JDialog {
         String tenXe = txtTenSanPham.getText();
         double dongia = 0;
         double dungTichbinhXang = 0;
+        boolean valid = true;
         try {
             dongia = Double.parseDouble(txtDonGia.getText());
         } catch (Exception e) {
             JOptionPane.showMessageDialog(this, "Vui lòng nhập đơn giá ở dạng số !");
+            valid = false;
         }
         String dongco = txttenDongCo.getText();
         String phankhoi = txtphanKhoi.getText();
@@ -355,11 +352,13 @@ public class AddProduct extends javax.swing.JDialog {
                 dungTichbinhXang = Double.parseDouble(txtdungTichbinhXang.getText());
             } catch (Exception e) {
                 JOptionPane.showMessageDialog(this, "Vui lòng nhập dung tích bình xăng ở dạng số !");
+                valid = false;
             }
             String phienban = txtphienBan.getText();
             if (maXe.equals("") && tenXe.equals("") && dongco.equals("") && phankhoi.equals("") && tieuthunl.equals("") && docao.equals("") && xuatxu.equals("") && phienban.equals("")) {
                 JOptionPane.showMessageDialog(this, "Vui lòng nhập đầy đủ thông tin !");
-            } else {
+                valid = false;
+            } else if (valid) {
                 XeSo xs = new XeSo(dungTichbinhXang, phienban, maXe, tenXe, 0, dongia, dongco, phankhoi, xuatxu, docao, tieuthunl,trangThai);
                 try {
                     XeSoDAO.getInstance().insert(xs);
@@ -377,11 +376,13 @@ public class AddProduct extends javax.swing.JDialog {
             try {
                 khoiluong = Integer.parseInt(txtDonGia.getText());
             } catch (Exception e) {
-                JOptionPane.showMessageDialog(this, "Vui lòng nhập số lượng ở dạng số !");
+                JOptionPane.showMessageDialog(this, "Vui lòng nhập ở dạng số !");
+                valid = false;
             }
             if (maXe.equals("") && tenXe.equals("") && dongco.equals("") && phankhoi.equals("") && tieuthunl.equals("") && docao.equals("") && xuatxu.equals("") && congsuat.equals("")) {
                 JOptionPane.showMessageDialog(this, "Vui lòng nhập đầy đủ thông tin !");
-            } else {
+                valid = false;
+            } else if (valid){
                 TayGa tayga = new TayGa(congsuat, khoiluong, maXe, tenXe, 0, dongia, dongco, phankhoi, xuatxu, docao, tieuthunl,trangThai);
                 TayGaDAO.getInstance().insert(tayga);
                 this.dispose();
@@ -405,22 +406,26 @@ public class AddProduct extends javax.swing.JDialog {
 
     }//GEN-LAST:event_cbxloaispPropertyChange
 
+    private void txtMaSanPhamActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtMaSanPhamActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtMaSanPhamActionPerformed
+
     /**
      * @param args the command line arguments
      */
     public String createIdTG() {
         ArrayList<XeMay> xmAll = XeMayDAO.getInstance().selectAll();
-        ArrayList<XeMay> taygaAll = new ArrayList<XeMay>();
+        ArrayList<XeMay> tgAll = new ArrayList<XeMay>();
         for (XeMay xeMay : xmAll) {
             if (xeMay.getMaXe().contains("TG")) {
-                taygaAll.add(xeMay);
+                tgAll.add(xeMay);
             }
         }
-        int i = taygaAll.size();
+        int i = tgAll.size();
         String check ="check";
         while(check.length()!=0){
             i++;
-            for (XeMay xeMay : taygaAll) {
+            for (XeMay xeMay : tgAll) {
                 if(xeMay.getMaXe().equals("TG"+i)){
                     check="";
                 }
@@ -517,17 +522,9 @@ public class AddProduct extends javax.swing.JDialog {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel xeso;
-    private javax.swing.JPanel jLabel11;
     private javax.swing.JTextField txtdungTichbinhXang;
-    private javax.swing.JPanel jLabel12;
     private javax.swing.JTextField txtphienBan;
-    private javax.swing.JPanel pc;
-    private javax.swing.JPanel jLabel13;
     private javax.swing.JTextField txtcongSuat;
-    private javax.swing.JPanel jLabel14;
-    private javax.swing.JTextField txtkhoiLuong;
-        
     private javax.swing.JTextField txtDonGia;
     private javax.swing.JTextField txtMaSanPham;
     private javax.swing.JTextField txtTenSanPham;
