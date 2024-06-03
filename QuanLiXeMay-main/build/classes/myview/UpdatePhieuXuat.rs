@@ -1,0 +1,9 @@
+view.UpdatePhieuXuat
+view.UpdatePhieuXuat$1
+view.UpdatePhieuXuat$2
+view.UpdatePhieuXuat$3
+view.UpdatePhieuXuat$4
+view.UpdatePhieuXuat$7$1
+view.UpdatePhieuXuat$5
+view.UpdatePhieuXuat$6
+view.UpdatePhieuXuat$7

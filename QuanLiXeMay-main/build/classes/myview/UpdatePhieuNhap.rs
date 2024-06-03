@@ -1,0 +1,9 @@
+view.UpdatePhieuNhap
+view.UpdatePhieuNhap$1
+view.UpdatePhieuNhap$2
+view.UpdatePhieuNhap$3
+view.UpdatePhieuNhap$4
+view.UpdatePhieuNhap$5
+view.UpdatePhieuNhap$6
+view.UpdatePhieuNhap$7$1
+view.UpdatePhieuNhap$7

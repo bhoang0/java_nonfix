@@ -1,0 +1,13 @@
+view.QuanLiKho$4
+view.QuanLiKho$3
+view.QuanLiKho
+view.QuanLiKho$2
+view.QuanLiKho$1
+view.QuanLiKho$8
+view.QuanLiKho$7
+view.QuanLiKho$6
+view.QuanLiKho$5
+view.QuanLiKho$12
+view.QuanLiKho$11
+view.QuanLiKho$9
+view.QuanLiKho$10
