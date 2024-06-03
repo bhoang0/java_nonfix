@@ -11,7 +11,7 @@ import java.io.InputStreamReader;
 
 /**
  *
- * @author Tran Nhat Sinh
+ * @author
  */
 public class AboutUs extends javax.swing.JDialog {
 

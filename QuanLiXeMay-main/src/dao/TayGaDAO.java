@@ -39,7 +39,7 @@ public class TayGaDAO implements DAOInterface<TayGa> {
             pst.setString(8, t.getcongSuat());
             pst.setInt(9, t.getkhoiLuong());
             pst.setString(10, t.getXuatXu());
-            pst.setString(11, "TayGa");
+            pst.setString(11, "Tay ga");
             pst.setString(12, t.gettieuThuNL());
             pst.setInt(13, t.getTrangThai());
             ketQua = pst.executeUpdate();
@@ -67,7 +67,7 @@ public class TayGaDAO implements DAOInterface<TayGa> {
             pst.setString(8, t.getcongSuat());
             pst.setInt(9, t.getkhoiLuong());
             pst.setString(10, t.getXuatXu());
-            pst.setString(11, "TayGa");
+            pst.setString(11, "Tay ga");
             pst.setString(12, t.gettieuThuNL());
             pst.setInt(13, t.getTrangThai());
             pst.setString(14, t.getMaXe());

@@ -58,7 +58,7 @@ public class XeMayDAO implements DAOInterface<XeMay> {
         int ketQua = 0;
         try {
             Connection con = JDBCUtil.getConnection();
-            String sql = "DELETE From XeMay WHERE maXe=? ";
+            String sql = "DELETE From XeMay WHERE MaXe=? ";
             PreparedStatement pst = con.prepareStatement(sql);
             pst.setString(1, t.getMaXe());
             ketQua = pst.executeUpdate();
@@ -76,11 +76,11 @@ public class XeMayDAO implements DAOInterface<XeMay> {
         ArrayList<XeMay> ketQua = new ArrayList<XeMay>();
         try {
             Connection con = JDBCUtil.getConnection();
-            String sql = "SELECT maXe,TenXe,soLuong,gia,tenDongCo,phanKhoi,xuatXu,doCaoYen,trangThai From XeMay";
+            String sql = "SELECT MaXe,TenXe,soLuong,gia,tenDongCo,phanKhoi,xuatXu,doCaoYen, tieuThuNL,trangThai From XeMay";
             PreparedStatement pst = con.prepareStatement(sql);
             ResultSet rs = pst.executeQuery();
             while (rs.next()) {
-                String maXe = rs.getString("maXe");
+                String maXe = rs.getString("MaXe");
                 String TenXe = rs.getString("TenXe");
                 int soLuong = rs.getInt("soLuong");
                 double gia = rs.getDouble("gia");
@@ -88,7 +88,7 @@ public class XeMayDAO implements DAOInterface<XeMay> {
                 String phanKhoi = rs.getString("phanKhoi");
                 String xuatXu = rs.getString("xuatXu");
                 String doCaoYen = rs.getString("doCaoYen");
-                String tieuThuNL = "";//rs.getString("tieuThuNL");
+                String tieuThuNL = rs.getString("tieuThuNL");
                 int trangThai = rs.getInt("trangThai");
                 XeMay xm = new XeMay(maXe, TenXe, soLuong, gia, tenDongCo, phanKhoi, xuatXu, doCaoYen, tieuThuNL, trangThai);
                 ketQua.add(xm);
@@ -107,13 +107,13 @@ public class XeMayDAO implements DAOInterface<XeMay> {
         XeMay ketQua = null;
         try {
             Connection con = JDBCUtil.getConnection();
-            String sql = "SELECT maXe,TenXe,soLuong,gia,tenDongCo,phanKhoi,xuatXu,doCaoYen,tieuThuNL,trangThai From XeMay WHERE maXe = ?";
+            String sql = "SELECT MaXe,TenXe,soLuong,gia,tenDongCo,phanKhoi,xuatXu,doCaoYen,tieuThuNL,trangThai From XeMay WHERE MaXe = ?";
             PreparedStatement pst = con.prepareStatement(sql);
             pst.setString(1, t);
 
             ResultSet rs = pst.executeQuery();
             while (rs.next()) {
-                String maXe = rs.getString("maXe");
+                String maXe = rs.getString("MaXe");
                 String TenXe = rs.getString("TenXe");
                 int soLuong = rs.getInt("soLuong");
                 double gia = rs.getDouble("gia");
@@ -133,14 +133,14 @@ public class XeMayDAO implements DAOInterface<XeMay> {
         return ketQua;
     }
 
-    public int updateSoLuong(String maXe, int soluong) {
+    public int updateSoLuong(String MaXe, int soluong) {
         int ketQua = 0;
         try {
             Connection con = JDBCUtil.getConnection();
             String sql = "UPDATE XeMay SET soLuong=? WHERE maXe=? ";
             PreparedStatement pst = con.prepareStatement(sql);
             pst.setInt(1, soluong);
-            pst.setString(2, maXe);
+            pst.setString(2, MaXe);
             ketQua = pst.executeUpdate();
             JDBCUtil.closeConnection(con);
         } catch (Exception e) {
@@ -149,13 +149,13 @@ public class XeMayDAO implements DAOInterface<XeMay> {
         return ketQua;
     }
     
-    public int deleteTrangThai(String maXe){
+    public int deleteTrangThai(String MaXe){
         int ketQua = 0;
         try {
             Connection con = JDBCUtil.getConnection();
-            String sql = "UPDATE XeMay SET trangThai=0 WHERE maXe=? ";
+            String sql = "UPDATE XeMay SET trangThai=0 WHERE MaXe=? ";
             PreparedStatement pst = con.prepareStatement(sql);
-            pst.setString(1, maXe);
+            pst.setString(1, MaXe);
             ketQua = pst.executeUpdate();
             JDBCUtil.closeConnection(con);
         } catch (Exception e) {
@@ -169,11 +169,11 @@ public class XeMayDAO implements DAOInterface<XeMay> {
         ArrayList<XeMay> ketQuaTonKho = new ArrayList<>();
         try {
             Connection con = JDBCUtil.getConnection();
-            String sql = "SELECT maXe,TenXe,soLuong,gia,tenDongCo,phanKhoi,xuatXu,doCaoYen,trangThai From XeMay";
+            String sql = "SELECT MaXe,TenXe,soLuong,gia,tenDongCo,phanKhoi,xuatXu,doCaoYen, tieuThuNL, trangThai From XeMay";
             PreparedStatement pst = con.prepareStatement(sql);
             ResultSet rs = pst.executeQuery();
             while (rs.next()) {
-                String maXe = rs.getString("maXe");
+                String maXe = rs.getString("MaXe");
                 String TenXe = rs.getString("TenXe");
                 int soLuong = rs.getInt("soLuong");
                 double gia = rs.getDouble("gia");
@@ -181,7 +181,7 @@ public class XeMayDAO implements DAOInterface<XeMay> {
                 String phanKhoi = rs.getString("phanKhoi");
                 String xuatXu = rs.getString("xuatXu");
                 String doCaoYen = rs.getString("doCaoYen");
-                String tieuThuNL = "";//rs.getString("tieuThuNL");
+                String tieuThuNL = rs.getString("tieuThuNL");
                 int trangThai = rs.getInt("trangThai");
                 XeMay xm = new XeMay(maXe, TenXe, soLuong, gia, tenDongCo, phanKhoi, xuatXu, doCaoYen, tieuThuNL, trangThai);
                 ketQua.add(xm);
@@ -203,7 +203,7 @@ public class XeMayDAO implements DAOInterface<XeMay> {
         ArrayList<XeMay> ketQua = new ArrayList<XeMay>();
         try {
             Connection con = JDBCUtil.getConnection();
-            String sql = "SELECT maXe,TenXe,soLuong,gia,tenDongCo,phanKhoi,xuatXu,doCaoYen,trangThai From XeMay WHERE trangThai = 1";
+            String sql = "SELECT maXe,TenXe,soLuong,gia,tenDongCo,phanKhoi,xuatXu,doCaoYen,tieuThuNL,trangThai From XeMay WHERE trangThai = 1";
             PreparedStatement pst = con.prepareStatement(sql);
             ResultSet rs = pst.executeQuery();
             while (rs.next()) {
@@ -215,7 +215,7 @@ public class XeMayDAO implements DAOInterface<XeMay> {
                 String phanKhoi = rs.getString("phanKhoi");
                 String xuatXu = rs.getString("xuatXu");
                 String doCaoYen = rs.getString("doCaoYen");
-                String tieuThuNL = "";//rs.getString("tieuThuNL");
+                String tieuThuNL = rs.getString("tieuThuNL");
                 int trangThai = rs.getInt("trangThai");
                 XeMay xm = new XeMay(maXe, TenXe, soLuong, gia, tenDongCo, phanKhoi, xuatXu, doCaoYen, tieuThuNL, trangThai);
                 ketQua.add(xm);
